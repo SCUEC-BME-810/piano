@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    border: 0;
+}
+/*
+设置body，在网页变换的时候实现背景不是纯白色，显得突兀
+*/
+body{
+    position: absolute;
+    z-index: -200;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(to top left, #6e5961 38%, #5f8186 100%);
+}
+/*背景部分*/
+#bac{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -100;
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(42deg, #df8c95, #bea6b0, #8ebecb, #15d3e7);/*我觉得还行.jpg byaei*/
+    transition: 0.5s;
+}
+/*引言部分*/
+#yinyan{
+    margin-top: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition:opacity  1s;
+}
+
+
+.btn1::before{
+    top:62.5%;
+    left: 49.5%;
+    transform:translate(-50%,-50%);
+    transform:scale(2.5);
+    z-index: 4;
+    color: rgba(36, 134, 185,0.7);
+    position: absolute;
+    /*transform: translate(31px,18px);*/
+    transition: 2s;
+}
+.bj{
+    position: absolute;
+    top:65%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    z-index: 3;
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 50%;
+    background-image: linear-gradient(108deg, #c51f7c, #aa5496, #8373b2, #328cce);
+    transition: 2s;
+}
+.fr{
+    top:66%;
+    left: 52%;
+    transform:translate(-50%,-50%);
+    z-index: 6;
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    opacity: 0;
+    cursor: pointer;
+}
+/*记录一下 现在的z-index 最大6  最小 -100（body）  byaei*/
+/*记录 点击完play 现在所有的的按钮都<-200  max 6*/
+#box{
+    opacity: 0;
+    display: flex;
+    position: absolute;
+    width: 60vw;
+    height: 70vh;
+    top: 20vh;
+    left: 25vw;
+    /*background-color: blueviolet;*/
+    transition: 2s;
+}
+#boxl{
+    margin-right: 10px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25vw;
+    height: 70vh;
+    font-size: 7rem;
+    font-family:'Courier New', Courier, monospace;
+    color: #292722;
+    transition: .5s; 
+}
+#boxr{
+    font-size: 0.7rem;
+    font-family: serif;
+    font-weight: 1000;
+    color: #364547;
+    width: 35vw;
+    height: 70vh;
+    line-height: 1rem;
+    transition: .5s;
+}
+
+#boxup{
+    position: absolute;
+    top:3vh;
+    width: 100vw;
+    text-align: center;
+    z-index: 0;
+    font-size: 1rem;
+    font-family: serif;
+    font-weight: 1000;
+    color: #364547;
+    opacity: 0;
+    transition: .5s;
+}
+
+#box1{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -200;
+    opacity: 0;
+    color: rgba(207, 204, 201, 0.7);
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 13vh;
+    width: 90vw;
+    height: 87vh;
+    text-align: center;
+    background-image: url(img/t012b38de2c48cd7949.jpg);
+    overflow: hidden;
+    background-size: cover;
+    font-size: 1rem;
+    transition: opacity 5s;
+}
+
+#liming{
+    font-size: 50px;
+}
+#chunfeng{
+    color: rgba(27, 23, 23,0.9);
+}
+*{
+    overflow:visible;
+}
+
+
+
+
+/*by aei*/
+
+/*响应式的rem适应*/
+html {
+    font-size : 20px;
+    height: 100vh;
+    width: 100vw;
+}
+@media only screen and (min-width: 401px){
+    html {
+        font-size: 25px !important;
+    }
+}
+@media only screen and (min-width: 428px){
+    html {
+        font-size: 26.75px !important;
+    }
+}
+@media only screen and (min-width: 481px){
+    html {
+        font-size: 30px !important; 
+    }
+}
+@media only screen and (min-width: 569px){
+    html {
+        font-size: 35px !important; 
+    }
+}
+@media only screen and (min-width: 641px){
+    html {
+        font-size: 40px !important; 
+    }
+}
