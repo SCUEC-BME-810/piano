@@ -2,7 +2,7 @@
  * 打字效果 byaei
  */
 function typewrite() {
-    let str = "<我愿意为一个人，写满整个世界的情诗<因为我喜欢她，因为......我也想给她哪怕一点点的浪漫<因为当代码不止是代码的时候，它就有了新的意义。<"; //利用<作为换行符 -作为空格
+    let str = "<我愿意，写满整个世界的诗篇<因为...<因为当代码不止是代码的时候，它就有了新的意义。<"; //利用<作为换行符 -作为空格
     let strp = "";
     let i = 0;
 
@@ -113,7 +113,7 @@ let k = {
     Z: 25
 }
 let a = [
-    { name: "A", yin: 8, str: "<br><br><br>我喜欢你，不分日夜，我喜欢你，无关其他，喜欢便是喜欢，多一点不行，少一点也不可以。<br><br>还有....,其他的键<br><br>那些都是关于你的声音。以及，找一下声音里关于你的线索。" },
+    { name: "A", yin: 8, str: "<br><br><br>这个世纪疯狂,没人性,腐败。<br><br>还有....,其他的键<br><br>那些都是关于你的声音。以及，找一下声音里关于你的线索。" },
     { name: "B", yin: 2, str: `<br><br><br>若逢新雪初霁，满月当空<br>下面平铺着皓影，上面流转着亮银，<br><br>而你带笑地向我走来，<br><br>月色和雪色之间 ，是第三种绝色 ，<br><br>与我而言， 日月星辉之中，你是第四种难得。` },
     { name: "C", yin: 3, str: "<br><br><br><br>我总是想些无关紧要的事<br><br>比如宇宙的目的，熬夜与猝死的关系<br><br>你是否曾爱我" },
     { name: "D", yin: 4, str: "<br><br><br><br>我想再和你谈谈<br><br>那只在你七月的暴雨中<br><br>刚刚落下的鸟" },
@@ -200,7 +200,7 @@ function fl(e) {
                 boxup.style.opacity = 1;
                 bac.style.opacity = 1;
             }, 500);
-            if (s.indexOf("ZENGTINGHBD") != -1 && records == 0) {
+            if (s.indexOf("KSHWXHN") != -1 && records == 0) {
                 setTimeout(function() {
                     records = 1;
                     bac.style.opacity = 0;
